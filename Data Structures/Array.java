@@ -62,7 +62,7 @@ public class Array {
         }
         sc.close();
     }
-
+    // Linear Search
     // Max Value in an array 1st way
     static int max1(int[] arr) {
         int maxval = arr[0];
