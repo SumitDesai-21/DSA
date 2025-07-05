@@ -30,7 +30,7 @@ public class LS_in_2D_Array{
 
     // Find Max Value in a 2D Array
     static int Max(int[][] arr){
-        // edge case
+        // edge case 
         if(arr.length==0){
             return -1;
         }
