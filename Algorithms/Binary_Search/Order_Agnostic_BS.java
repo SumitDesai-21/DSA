@@ -1,7 +1,7 @@
 package Binary_Search;
 
 // Order Agnostic Binary Search
-// It is mentioned that the array is sorted but not mentioned it is ascending or descending
+// It is mentioned that the array is sorted but not mentioned it is in ascending or descending order.
 public class Order_Agnostic_BS {
     public static void main(String[] args) {
         // int[] nums = {100,81,64,49,36,25,16,9,4,1};
