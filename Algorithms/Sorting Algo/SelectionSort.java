@@ -30,5 +30,4 @@ public class SelectionSort {
         }
         return maxIndex;
     }
-
 }
