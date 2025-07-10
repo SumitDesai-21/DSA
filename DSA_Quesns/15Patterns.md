@@ -3,9 +3,9 @@
 
 **1. Prefix Sum**
 ---
-1.   Range Sum Query - Immutable
-2.   Contiguous Array
-3.   Subarray Sum Equals K
+303.   Range Sum Query - Immutable
+525.   Contiguous Array
+560.   Subarray Sum Equals K
 
 **2. Two Pointers**
 ---
