@@ -29,8 +29,7 @@ public class Strings{
        // System.out.println('a' + 'b'); // 97 + 98 = 195
        //System.out.println("a" + "b"); // Concatenate --> ab
        //System.out.println("a" + 1); // "a" + "1" --> a1
-       //System.out.println("sumit" + new ArrayList<>()); // Objects will be converted into the string 
-       // by toString method of java
+       //System.out.println("sumit" + new ArrayList<>()); // Objects will be converted into the string by toString method in java
        // System.out.println(56+""+new ArrayList<>());
     //    String series = "";
     //    for (int i = 0; i < 26; i++) {
