@@ -161,36 +161,6 @@ public class Strings {
 
 // import java.util.Arrays;
 
-// public class Strings {
-
-//     public static void main(String[] args) {
-//         // Input sentence
-//         String name = "is2 sentence4 This1 a3";
-
-//         // Step 1: Split the input string into words
-//         String[] words = name.split(" ");
-
-//         // Step 2: Create an array to store the words in the correct order
-//         String[] sortedSentence = new String[words.length];
-
-//         // Step 3: Iterate over the words
-//         for (String word : words) {
-//             // Extract the number at the end of the word (this tells us the position)
-//             int position = word.charAt(word.length() - 1) - '0';  // Convert char to int
-
-//             // Place the word in the correct position in the sorted array (subtract 1 for 0-based index)
-//             sortedSentence[position - 1] = word.substring(0, word.length() - 1);  // Remove the number
-//         }
-
-//         // Step 4: Join the words to form the final sentence
-//         String result = String.join(" ", sortedSentence);
-
-//         // Output the result
-//         System.out.println(result);
-//     }
-// }
-
-
 // // Group Anagrams
 // public class Strings {
 //     public static void main(String[] args) {
