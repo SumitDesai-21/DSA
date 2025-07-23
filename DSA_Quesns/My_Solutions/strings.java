@@ -73,4 +73,16 @@ public class strings {
     }
 }
  */
+
+ // 2nd way
+/*
+public class strings {
+    public static void main(String[] args) {
+        String s = "hello world";
+
+        String result = s.replaceAll("[aeiouAEIOU]", "");
+        System.out.println(result);
+    }
+}
+ */
 }
