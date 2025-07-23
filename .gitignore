@@ -1,0 +1,25 @@
+# Ignore Java class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore build directories
+bin/
+out/ 
