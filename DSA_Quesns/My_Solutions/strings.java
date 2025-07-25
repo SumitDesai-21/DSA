@@ -155,3 +155,26 @@ public class strings {
  }
 
  */
+
+ 
+/*
+//  More Efficient Approach
+ // Using indexOf() function
+ public class strings {
+     public static void main(String[] args) {
+         String s  = "aabababa";
+         String part = "aba";
+         System.out.println(removeOccurrences(s, part));
+     }
+     static String removeOccurrences(String s, String part) {
+         StringBuilder sb = new StringBuilder(s);
+         // intially sb is s
+         while(sb.indexOf(part) != -1){
+             int idx = sb.indexOf(part);
+             sb.delete(idx, idx + part.length());
+         }
+         return sb.toString();
+     }
+ }
+
+  */
