@@ -178,3 +178,18 @@ public class strings {
  }
 
   */
+
+  /*
+    // All possible substrings of a string. O(n2)
+public class strings {
+    public static void main(String[] args) {
+        String str = "pwwkew";
+        for(int s = 0; s < str.length(); s++){
+            for(int e = s + 1; e <= str.length(); e++){
+                System.out.println(str.substring(s, e));
+            }
+        }
+    }
+}
+   */
+
