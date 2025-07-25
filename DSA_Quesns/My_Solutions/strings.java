@@ -129,3 +129,29 @@ public class strings {
     }
 }
  */
+
+
+// Remove All Occurrences of a Substring
+/*
+public class strings {
+     public static void main(String[] args) {
+         String s = "daabcbaabcbc";
+         String part = "abc";
+         System.out.println(removeOccurrences(s, part));
+     }
+     static String removeOccurrences(String s, String part) {
+         StringBuilder sb = new StringBuilder();
+         sb.append(s);
+
+         while(sb.toString().contains(part)){
+             String[] words = sb.toString().split(part);
+             sb.delete(0, sb.toString().length());
+             for(String word : words){
+                 sb.append(word);
+             }
+         }
+         return sb.toString();
+     }
+ }
+
+ */
