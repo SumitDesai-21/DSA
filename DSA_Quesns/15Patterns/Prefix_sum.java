@@ -26,4 +26,22 @@ public class Prefix_sum {
         }
         return subArrayLength;
     }
+    // 560. Subarray Sum Equals K
+    public int subarraySum(int[] nums, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int n = nums.length, count = 0, sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += nums[i];
+            if (map.containsKey(sum))
+                map.put(sum, map.get(sum) + 1);
+            else
+                map.put(sum, 1);
+            if(sum == k)
+                count++;
+            if(map.containsKey(sum - k))
+                count += map.get(sum - k);
+
+        }
+        return count;
+    }
 }
