@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 public class SlidingWindow {
     // fundamental problem of sliding window pattern
     // Leetcode Q.643 Maximum Average Subarray I
@@ -33,5 +35,21 @@ public class SlidingWindow {
             }
         }
         return Maxlen;
+    }
+    // less efficient
+    public int maximumUniqueSubarray1(int[] nums) {
+        int sum = 0, ans = 0, s = 0;
+        HashSet<Integer> set = new HashSet<>();
+        for (int e = 0; e < nums.length; e++) {
+            while(set.contains(nums[e])){
+                set.remove(nums[e]);
+                sum -= nums[s];
+                s++;
+            }
+            set.add(nums[e]);
+            sum += nums[e];
+            ans = Math.max(ans, sum);
+        }
+        return ans;
     }
 }
