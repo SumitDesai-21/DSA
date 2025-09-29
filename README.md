@@ -1,45 +1,67 @@
-# DSA
+# Data Structures and Algorithms in C
 
-**This repository is a comprehensive resource for learning Data Structures and Algorithms (DSA) in Java. It is designed to help students, and anyone looking to strengthen their DSA skills.**
-- Curated DSA sheets with handpicked questions
-- Important topics for revision
-- Assignments & key problems with solutions
-- A simple and focused collection for quick DSA practice and revision
+## Overview
+This is a Data Structures and Algorithms repository. It contains the implementation of various data structures and algorithms in C Programming language. Also, it contains every single assignment of my Data Structures and Algorithms course.
 
-## Table of Contents
-- [DSA](#dsa)
-  - [Table of Contents](#table-of-contents)
-  - [Folder Structure](#folder-structure)
-  - [How to Use](#how-to-use)
-  - [Contributing](#contributing)
+## Data Structures
+1. **Array**
+2. **Linked List**
+    - Singly Linked List
+    - Doubly Linked List
+    - Circular Linked List  
+3. **Stack**
+    - Stack using Array
+    - Stack using Linked List
+4. **Queue**
+    - Queue using Array
+    - Queue using Linked List
 
-## Folder Structure
+## How to use this repository?
+1. Clone the repository using the following command:
+```bash
+git clone https://github.com/SumitDesai-21/DSA
+```
+2. Change the directory to the required data structure or algorithm folder.
+for example, to change the directory to circular linked list, use the following command:
+```bash
+cd linkedlist
+cd cll
+```
+3. Compile the code using the following command:
+```bash
+gcc *.c -o output
+```
+4. Run the code using the following command:
+```bash
+./output
+```
+5. To clean the output file, use the following command:
+```bash
+rm output
+```
 
-- `Data Structures/` — Java implementations of core data structures (e.g., Array, Strings, ArrayLists)
-- `Algorithms/` — Sorting and searching algorithms, organized by type
-- `DSA_Quesns/` — Practice questions, assignments, and solutions
-- `Java Basics/` — Introductory Java and programming concepts
+## How to contribute?
 
-## How to Use
+1. Fork the repository
+2. Create a new branch
+```bash
+git checkout -b new_branch
+```
+3. Make changes
+4. Commit your changes
+```bash
+git commit -m "Message"
+```
+5. Push your changes
+```bash
+git push origin new_branch
+```
+6. Create a pull request
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/SumitDesai-21/DSA.git
-   ```
-2. **Navigate to a folder and compile a Java file:**
-   ```sh
-   javac "Data Structures/Array.java"
-   java Array
-   ```
-   > Adjust the path and class name as needed for your OS and file.
+Contributions are highly appreciated. Please create a pull request if you have any suggestions or improvements.
 
-3. **Explore the folders:**
-   - Browse through the folders to find code samples, assignments, and solutions for various DSA topics.
-
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-**Happy Coding!**
+## About the Author
+ - **LinkedIn**: [Sumit Desai](https://linkedin.com/in/sumit-v-d-3b6a9632a)
+ - **GitHub**: [Sumit Desai](https://github.com/SumitDesai-21)
+ 
+Happy Coding! :heart:
