@@ -15,7 +15,7 @@ This is a Data Structures and Algorithms repository. It contains the implementat
 4. **Queue**
     - Queue using Array
     - Queue using Linked List
-5. **Infix-Postfix*
+5. **Infix-Postfix**
    - infix to postfix using arrays
    - postfix expression evaluation
 
