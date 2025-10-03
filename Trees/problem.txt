@@ -1,0 +1,5 @@
+Q.Write a C program for Binary Tree Traversal using recursion and
+stacks.
+a. Per-order traversal.
+b. In-order traversal
+c. Post-order traversal
