@@ -1697,7 +1697,3 @@ int readfile(char *filename, char *words[], int size){
     close(fd);
     return i;
 }
-int main(void)
-{
-    return 0;
-}
