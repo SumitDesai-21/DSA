@@ -10,6 +10,79 @@ typedef struct tree
 
 tree *root = NULL;
 
+// implement queue
+typedef struct queue
+{
+    tree *t;
+    struct queue *next;
+} queue;
+
+int cnt = 0; // counts number of elements in queue
+queue *front = NULL, *rear = NULL;
+
+void addQ(tree *node)
+{
+    queue *temp = (queue *)malloc(sizeof(tree));
+    temp->t = node;
+    temp->next = NULL;
+    if (rear == NULL)
+    {
+        front = rear = temp;
+    }
+    else
+    {
+        rear->next = temp;
+        rear = temp;
+    }
+    cnt++;
+}
+tree *remQ()
+{
+    if (front == NULL)
+        return NULL;
+    queue *temp = front;
+    tree *rem = temp->t;
+    front = front->next;
+    if (front == NULL)
+    {
+        rear = NULL;
+    }
+    free(temp);
+    cnt--;
+    return rem;
+}
+int isEmpty()
+{
+    return front == NULL;
+}
+int size()
+{
+    return cnt;
+}
+void levelorder(tree *root)
+{
+    if (root == NULL)
+        return;
+    addQ(root);
+    int currlev = 0;
+    while (!isEmpty())
+    {
+        int levSize = size();
+        printf("level %d: ", currlev);
+        for (int i = 0; i < levSize; i++)
+        {
+            tree *temp = remQ();
+            printf("%d ", temp->data);
+            if (temp->left != NULL)
+                addQ(temp->left);
+            if (temp->right != NULL)
+                addQ(temp->right);
+        }
+        printf("\n");
+        currlev++;
+    }
+}
+
 tree *insertNodes(int val, tree *node)
 {
     // base case
@@ -78,13 +151,27 @@ tree *delete(tree *root, int key)
     }
     return root;
 }
-void preorder(tree *node)
+void leaf(tree *node)
 {
     if (node == NULL)
         return;
-    printf("%d ", node->data);
-    preorder(node->left);
-    preorder(node->right);
+    if (node->left == NULL && node->right == NULL)
+    {
+        printf("%d ", node->data);
+    }
+    leaf(node->left);
+    leaf(node->right);
+}
+void nonleaf(tree *node)
+{
+    if (node == NULL)
+        return;
+    if (!(node->left == NULL && node->right == NULL))
+    {
+        printf("%d ", node->data);
+    }
+    nonleaf(node->left);
+    nonleaf(node->right);
 }
 void freeTree(tree *node)
 {
@@ -118,23 +205,33 @@ int main(void)
             printf("Enter value of node: ");
             scanf("%d", &val);
             insert(val);
+            printf("\n");
             break;
         case 2:
             printf("Enter value to delete from BST: ");
             scanf("%d", &val);
-            if (val == -1)
+            if (val != -1)
             {
                 delete(root, val);
             }
+            printf("\n");
             break;
         case 3:
-            // coming soon
+            printf("Leaf nodes/Terminal nodes: ");
+            leaf(root);
+            printf("\n");
+            printf("Non-leaf nodes/Non-Terminal nodes: ");
+            nonleaf(root);
+            printf("\n\n");
             break;
         case 4:
-            // coming soon
+            printf("Level order traversal:\n");
+            levelorder(root);
+            printf("\n\n");
             break;
         case 5:
             printf("Program exited successfully.\n");
+            freeTree(root);
             return 0;
         default:
             printf("Invalid choice\n");
