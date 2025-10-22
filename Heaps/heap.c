@@ -3,7 +3,7 @@
 #include <limits.h>
 
 #define SIZE 100
-
+// heap definition
 typedef struct Heap {
     int capacity;
     int size;
