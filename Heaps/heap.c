@@ -9,7 +9,7 @@ typedef struct Heap {
     int size;
     int arr[SIZE];
 } Heap;
-
+// heap functions
 int parent(int i) {
     return (i - 1) / 2;
 }
