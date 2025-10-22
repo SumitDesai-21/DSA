@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <limits.h>
 
-#define SIZE 500
+#define SIZE 100
 
 typedef struct Heap {
     int capacity;
