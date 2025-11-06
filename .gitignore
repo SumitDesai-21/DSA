@@ -1,6 +1,6 @@
 # Ignore Java class files
 *.class
-
+.exe
 # Ignore log files
 *.log
 
