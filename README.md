@@ -18,6 +18,9 @@ This is a Data Structures and Algorithms repository. It contains the implementat
 5. **Infix-Postfix**
    - infix to postfix using arrays
    - postfix expression evaluation
+6. **Trees**
+   - BT & BST
+   - BFS & DFS
 
 ## How to use this repository?
 1. Clone the repository using the following command:
@@ -68,3 +71,4 @@ Contributions are highly appreciated. Please create a pull request if you have a
  - **GitHub**: [Sumit Desai](https://github.com/SumitDesai-21)
  
 Happy Coding! :heart:
+
