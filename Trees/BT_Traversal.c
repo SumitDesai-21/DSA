@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <limits.h>
 // definition of tree
 typedef struct tree {
     int data;
@@ -61,18 +61,33 @@ void inorder(tree *node){
   if(node == NULL){
     return;
   }
-  preorder(node->left);
+  inorder(node->left);
   printf("%d ", node->data);
-  preorder(node->right);
+  inorder(node->right);
 }
 
 void postorder(tree *node){
   if(node == NULL){
     return;
   }
-  preorder(node->left);
-  preorder(node->right);
+
+  postorder(node->left);
+  postorder(node->right);
   printf("%d ", node->data);
+}
+
+// ceiling value calculation
+void traverse(tree* node, int m, int *res){
+	if(node == NULL) return;
+	traverse(node->left, m, res);
+	int curr = node->data;
+	if(curr <= *res && curr >= m) *res = curr;
+	traverse(node->right, m, res);
+}
+int findBlock(tree *node, int m){
+	int res = INT_MAX;
+	traverse(node, m, &res);
+	return res;
 }
 int main(void) {
     int x;
@@ -84,17 +99,7 @@ int main(void) {
     root->right = NULL;
 
     populate(root);
-
-
-    printf("Preorder Traversal: ");
-    preorder(root);
-
-    printf("\n");
-    printf("Inorder Traversal: ");
-    inorder(root);
-
-    printf("\n");
-    printf("Postorder Traversal: ");
-    postorder(root);
+    int y = findBlock(root, 580);
+    printf("%d\n", y);
     return 0;
 }
