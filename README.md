@@ -1,3 +1,22 @@
+<p align="center">
+  <img src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/96/external-readme-is-a-easy-to-build-a-developer-hub-that-adapts-to-the-user-logo-regular-tal-revivo.png" width="100" />
+</p>
+<p align="center">
+    <h1 align="center">DSA</h1>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/github/last-commit/SumitDesai-21/DSA?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/SumitDesai-21/DSA?style=flat&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/SumitDesai-21/DSA?style=flat&color=0080ff" alt="repo-language-count">
+<p>
+<p align="center">
+		<em>Developed with: </em>
+</p>
+<p align="center">
+	<img src="https://img.shields.io/badge/C-A8B9CC.svg?style=flat&logo=C&logoColor=black" alt="C">
+</p>
+<hr>
+
 # Data Structures and Algorithms in C
 
 ## Overview
