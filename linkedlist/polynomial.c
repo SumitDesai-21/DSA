@@ -175,7 +175,7 @@ int main()
     Node *poly2 = NULL;
     Node *addition = NULL, *subtraction = NULL, *multiplication = NULL;
 
-    // poly 1== x^2+x+1
+    // poly 1== 3x^2+3x+1
     insertTerm(&poly1, 3, 2);
     insertTerm(&poly1, 3, 1);
     insertTerm(&poly1, 1, 0);
