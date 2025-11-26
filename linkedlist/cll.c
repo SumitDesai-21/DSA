@@ -86,6 +86,7 @@ void deleteAtBeginning()
     Node *node = head;
     temp->next = head->next;
     head = head->next;
+    free(node);
 }
 
 // delete after a node
