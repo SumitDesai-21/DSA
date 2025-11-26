@@ -5,22 +5,27 @@ This is a Data Structures and Algorithms repository. It contains the implementat
 
 ## Data Structures
 1. **Array**
-2. **Linked List**
+3. **Linked List**
     - Singly Linked List
     - Doubly Linked List
     - Circular Linked List  
-3. **Stack**
+4. **Stack**
     - Stack using Array
     - Stack using Linked List
-4. **Queue**
+5. **Queue**
     - Queue using Array
     - Queue using Linked List
-5. **Infix-Postfix**
+6. **Infix-Postfix**
    - infix to postfix using arrays
    - postfix expression evaluation
-6. **Trees**
-   - BT & BST
-   - BFS & DFS
+7. **Binary Tree**
+   - Binary Tree Implementation
+   - BT Traversals (BFS & DFS)
+   - BST (Binary Search Tree Implementation)
+8. **Graphs**
+   - Graph implementation using Adjacency Matrix
+   - Graph implementation using Adjacency List
+   - BFS & DFS Traversal On Graph
 
 ## How to use this repository?
 1. Clone the repository using the following command:
@@ -71,4 +76,5 @@ Contributions are highly appreciated. Please create a pull request if you have a
  - **GitHub**: [Sumit Desai](https://github.com/SumitDesai-21)
  
 Happy Coding! :heart:
+
 
